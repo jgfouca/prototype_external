@@ -2,11 +2,11 @@
 
 #include <iostream>
 
-namespace dependency {
+namespace external {
 
 void dependency_function()
 {
   std::cout << "Most convoluted hello world ever." << std::endl;
 }
 
-} // namespace dependency
+} // namespace external

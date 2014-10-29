@@ -1,10 +1,10 @@
 #ifndef DEPENDENCY_HPP
 #define DEPENDENCY_HPP
 
-namespace dependency {
+namespace external {
 
 void dependency_function();
 
-} // namespace dependency
+} // namespace external
 
 #endif
