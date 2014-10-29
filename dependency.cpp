@@ -6,7 +6,7 @@ namespace external {
 
 void dependency_function()
 {
-  std::cout << "Most convoluted hello world ever, 2." << std::endl;
+  std::cout << "Most convoluted hello world ever, 3." << std::endl;
 }
 
 } // namespace external
