@@ -4,11 +4,11 @@ CPP         = g++
 
 OBJECTS = $(patsubst %.cpp, %.o,$(wildcard *.cpp))
 
-libdependency.so: $(OBJECTS)
-	$(CPP) -shared $(OBJECTS) -o $@
+libdependency.a: $(OBJECTS)
+	ar -rsc $@ $(OBJECTS)
 
 $(OBJECTS): %.o: %.cpp *.hpp
 	$(CPP) -c $(CPPFLAGS) $< -o $@
 	-@echo
 clean:
-	-@rm -f *.o *~ libdependency.so
+	-@rm -f *.o *~ libdependency.a
